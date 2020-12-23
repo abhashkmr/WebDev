@@ -1,7 +1,30 @@
 function validate() {
-      if( document.registrationForm.name.value == "" ) {
+
+
+
+      if(!document.registrationForm.enrollment.value){
+         alert("Please Enter enrollment Number");
+         document.registrationForm.enrollment.focus() ;
+         return false;
+      }
+            if( document.registrationForm.name.value == "" ) {
          alert( "Please provide your name!" );
          document.registrationForm.name.focus() ;
+         return false;
+      }
+
+
+      if( document.registrationForm.father.value == "" ) {
+         alert( "Please provide your Father's Name!" );
+         document.registrationForm.father.focus() ;
+         return false;
+      }
+
+
+
+         if( document.registrationForm.mother.value == "" ) {
+         alert( "Please provide your Mother's Name!" );
+         document.registrationForm.mother.focus() ;
          return false;
       }
 

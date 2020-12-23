@@ -93,7 +93,7 @@ if(isset($_POST['submit']))   // it checks whether the user clicked login button
 
 
 	<nav class="navbar navbar-expand-lg navbar-dark bg-success">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="home.php">Student portal</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -106,17 +106,15 @@ if(isset($_POST['submit']))   // it checks whether the user clicked login button
         <a class="nav-link"  href="register.php">Register</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="loginpage.php">Login</a>
+        <a class="nav-link" href="login.php">Login</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
+     
     </ul>
   </div>
 </nav>
 		
 
-	<h2><center>Student Login </center></h2>
+	<center><h2>Student Login </h2>
 
 
 		<form method="post" action ="login.php"  name="loginForm">
@@ -132,9 +130,12 @@ if(isset($_POST['submit']))   // it checks whether the user clicked login button
     </div>
 
 
-    <center><input type="submit" value="Login" name ="submit" class="btn btn-primary" ></center>
+    <input type="submit" value="Login" name ="submit" class="btn btn-primary" >
 
 		</form>
+
+  </center>
+
 </body>
 </html>
 	
